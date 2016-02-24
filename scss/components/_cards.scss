@@ -1,0 +1,26 @@
+#row2 {
+  h3 {
+    @include position(relative, 42% null null null);
+    @include text(24px, normal, $letter-spacing: 2px);
+    text-shadow: 2px 2px 2px black;
+  }
+  hr {
+    @include position(relative, 42% null null null);
+    width: 60%;
+    border: .15em solid $white;
+  }
+  #cardA {
+    @include background-image(linear-gradient(rgba($spaceOrange, 0.45),
+    rgba($spaceOrange, 0.45)),url("#{$path-img}/copernicus.jpg"));
+  }
+  #cardB {
+    @include background-image(linear-gradient(rgba($earthBlue, 0.45),
+    rgba($earthBlue, 0.45)),url("#{$path-img}/moonWalk.gif"));
+    background-size: cover;
+  }
+  #cardC {
+    @include background-image(linear-gradient(rgba($white, 0.45),
+    rgba($white, 0.45)),url("#{$path-img}/guide.jpg"));
+    background-size: cover;
+  }
+}

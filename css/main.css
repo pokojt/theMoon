@@ -19,7 +19,6 @@ body {
   color: #fff;
   clear: both;
   overflow: auto;
-  border: 4px solid purple;
   width: 100%; }
   .row .card {
     float: left; }
@@ -78,12 +77,14 @@ body {
     height: 100%;
     width: 25%; }
 
-.row #cardA {
-  border: 1px solid red; }
-.row #cardB {
-  border: 1px solid blue; }
-.row #cardC {
-  border: 1px solid green; }
+.row {
+  border: 4px solid purple; }
+  .row #cardA {
+    border: 1px solid red; }
+  .row #cardB {
+    border: 1px solid blue; }
+  .row #cardC {
+    border: 1px solid green; }
 
 .pageWrapper {
   max-width: 70%;
@@ -169,5 +170,29 @@ a {
     color: #000;
     -webkit-transition: color .3s linear;
     -webkit-transition: background .3s linear; }
+
+#row2 h3 {
+  position: relative;
+  top: 42%;
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px black; }
+#row2 hr {
+  position: relative;
+  top: 42%;
+  width: 60%;
+  border: 0.15em solid #fff; }
+#row2 #cardA {
+  background-image: -webkit-linear-gradient(rgba(197, 102, 54, 0.45), rgba(197, 102, 54, 0.45)), url("../img/copernicus.jpg");
+  background-image: linear-gradient(rgba(197, 102, 54, 0.45), rgba(197, 102, 54, 0.45)), url("../img/copernicus.jpg"); }
+#row2 #cardB {
+  background-image: -webkit-linear-gradient(rgba(73, 107, 155, 0.45), rgba(73, 107, 155, 0.45)), url("../img/moonWalk.gif");
+  background-image: linear-gradient(rgba(73, 107, 155, 0.45), rgba(73, 107, 155, 0.45)), url("../img/moonWalk.gif");
+  background-size: cover; }
+#row2 #cardC {
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("../img/guide.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("../img/guide.jpg");
+  background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */
