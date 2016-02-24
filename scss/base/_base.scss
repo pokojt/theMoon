@@ -12,4 +12,10 @@ div {
 body {
   @extend %centeredText;
   background: $moonGray;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }

@@ -8,10 +8,15 @@ body {
   text-align: center; }
 
 .navbar ul {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.navbar ul {
   overflow: auto; }
 
 .pageWrapper {
-  max-width: 68em;
+  max-width: 70%;
   margin-left: auto;
   margin-right: auto; }
   .pageWrapper::after {
@@ -19,14 +24,33 @@ body {
     content: "";
     display: table; }
 
+.heroImage {
+  background-image: url("../img/moonView.jpg");
+  background-size: cover;
+  height: 50vh; }
+
 .navbar {
   background-color: #fff; }
   .navbar ul {
-    list-style: none; }
+    margin-top: 40px;
+    list-style: none;
+    background: #fff;
+    width: 60%; }
     .navbar ul li {
-      display: inline; }
-      .navbar ul li:last-child {
-        float: right; }
+      display: inline;
+      margin: 2%;
+      color: #A9A9A9; }
+    .navbar ul .title {
+      font-size: 3em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: black; }
+  .navbar #menuLink {
+    position: relative;
+    bottom: 50px;
+    left: 43%;
+    font-weight: bold;
+    color: #13391d; }
 
 *,
 *::before,
@@ -39,6 +63,11 @@ div {
   border: .5px solid black; }
 
 body {
-  background: #F5F5F5; }
+  background: #F5F5F5;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+a {
+  text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
