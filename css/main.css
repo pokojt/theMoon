@@ -4,4 +4,41 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+body {
+  text-align: center; }
+
+.navbar ul {
+  overflow: auto; }
+
+.pageWrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .pageWrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.navbar {
+  background-color: #fff; }
+  .navbar ul {
+    list-style: none; }
+    .navbar ul li {
+      display: inline; }
+      .navbar ul li:last-child {
+        float: right; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+div {
+  border: .5px solid black; }
+
+body {
+  background: #F5F5F5; }
+
 /*# sourceMappingURL=main.css.map */
