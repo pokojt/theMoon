@@ -1,5 +1,14 @@
 .heroImage {
-  background-image: url("#{$path-img}/moonView.jpg");
+  // @include background-image(url("#{$path-img}/moonView.jpg"), linear-gradient(white 0, black 50%, transparent 50%));
+  @include background-image(linear-gradient(black 0px, transparent 100%),url("#{$path-img}/moonView.jpg"));
   background-size: cover;
   height: 50vh;
+}
+
+.heroText {
+  border: none;
+  @include padding(8% null 50px null);
+  h2 {
+    @include text(40px, normal, .4em, 2px, $white);
+  }
 }

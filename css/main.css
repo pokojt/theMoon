@@ -25,14 +25,28 @@ body {
     display: table; }
 
 .heroImage {
-  background-image: url("../img/moonView.jpg");
+  background-image: -webkit-linear-gradient(black 0px, transparent 100%), url("../img/moonView.jpg");
+  background-image: linear-gradient(to   , transparent 100%), url("../img/moonView.jpg");
   background-size: cover;
   height: 50vh; }
 
+.heroText {
+  border: none;
+  padding-top: 8%;
+  padding-bottom: 50px; }
+  .heroText h2 {
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 0.4em;
+    letter-spacing: 2px;
+    color: #fff; }
+
 .navbar {
+  margin-top: 0px;
   background-color: #fff; }
   .navbar ul {
-    margin-top: 40px;
+    margin-top: 0px;
+    padding-top: 40px;
     list-style: none;
     background: #fff;
     width: 60%; }
@@ -59,8 +73,9 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-div {
-  border: .5px solid black; }
+html, body {
+  padding: 0px;
+  margin: 0px; }
 
 body {
   background: #F5F5F5;
@@ -69,5 +84,17 @@ body {
 
 a {
   text-decoration: none; }
+
+.button {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 40px;
+  font-size: 1.2em;
+  letter-spacing: 3.5px; }
+  .button:hover {
+    background: #fff;
+    color: #000;
+    -webkit-transition: color .3s linear;
+    -webkit-transition: background .3s linear; }
 
 /*# sourceMappingURL=main.css.map */
