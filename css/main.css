@@ -15,6 +15,76 @@ body {
 .navbar ul {
   overflow: auto; }
 
+.row {
+  color: #fff;
+  clear: both;
+  overflow: auto;
+  border: 4px solid purple;
+  width: 100%; }
+  .row .card {
+    float: left; }
+    .row .card p {
+      margin-top: 0; }
+
+#row2 {
+  height: 30vh; }
+  #row2 #cardA {
+    height: 100%;
+    width: 50%; }
+  #row2 #cardB {
+    height: 100%;
+    width: 25%; }
+  #row2 #cardC {
+    height: 100%;
+    width: 25%; }
+
+#row3 {
+  height: 30vh; }
+  #row3 #cardA {
+    height: 100%;
+    width: 25%; }
+    #row3 #cardA .cardTop {
+      height: 50%;
+      background: #391339;
+      padding: 2%; }
+    #row3 #cardA .cardBottom {
+      height: 50%;
+      background: #133913;
+      padding: 2%; }
+  #row3 #cardB {
+    height: 100%;
+    width: 25%; }
+  #row3 #cardC {
+    height: 100%;
+    width: 50%; }
+    #row3 #cardC .cardTop {
+      height: 50%;
+      background: #133913;
+      padding: 2%; }
+    #row3 #cardC .cardBottom {
+      height: 50%;
+      background: #391339;
+      padding: 2%; }
+
+#row4 {
+  height: 30vh; }
+  #row4 #cardA {
+    height: 100%;
+    width: 25%; }
+  #row4 #cardB {
+    height: 100%;
+    width: 50%; }
+  #row4 #cardC {
+    height: 100%;
+    width: 25%; }
+
+.row #cardA {
+  border: 1px solid red; }
+.row #cardB {
+  border: 1px solid blue; }
+.row #cardC {
+  border: 1px solid green; }
+
 .pageWrapper {
   max-width: 70%;
   margin-left: auto;
@@ -23,6 +93,9 @@ body {
     clear: both;
     content: "";
     display: table; }
+
+.footer {
+  clear: both; }
 
 .heroImage {
   background-image: -webkit-linear-gradient(black 0px, transparent 100%), url("../img/moonView.jpg");
